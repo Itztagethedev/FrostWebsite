@@ -1,9 +1,8 @@
 // FrostMine website settings.
-// Replace these values when your real Discord invite and vote pages are ready.
+// FrostMine community invite.
 const FROSTMINE_CONFIG = {
   serverAddress: "frostmine.xyz",
-  discordInvite: "",
-  voteLinks: []
+  discordInvite: "https://discord.gg/frostmine"
 };
 
 const $ = (id) => document.getElementById(id);
@@ -96,21 +95,9 @@ if (FROSTMINE_CONFIG.discordInvite.trim()) {
 } else {
   discordLink.addEventListener("click", (event) => {
     event.preventDefault();
-    showToast("Discord invite will be added soon.");
+    showToast("Join the FrostMine Discord: discord.gg/frostmine");
   });
 }
 
-const voteButton = document.querySelector(".vote-content .button");
-if (FROSTMINE_CONFIG.voteLinks.length) {
-  voteButton.href = FROSTMINE_CONFIG.voteLinks[0].url;
-  voteButton.textContent = "Vote for FrostMine ↗";
-  voteButton.target = "_blank";
-  voteButton.rel = "noopener";
-} else {
-  voteButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    showToast("Vote links will be added soon.");
-  });
-}
 
 refreshServerStatus();
