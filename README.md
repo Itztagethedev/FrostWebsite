@@ -6,12 +6,11 @@ A responsive static website for [frostmine.xyz](https://frostmine.xyz), built wi
 
 - Home / landing page with FrostMine branding and copy-IP buttons
 - Server rules section
-- Vote section
 - Live Java server status and player count via the mcsrvstat.us status API
 - Discord community section
 - Mobile navigation and responsive styling
 
-There is intentionally **no store or leaderboard**.
+There is intentionally **no store, leaderboard or voting section**.
 
 ## Configure
 
@@ -20,14 +19,11 @@ Open `script.js` and edit the settings at the top:
 ```js
 const FROSTMINE_CONFIG = {
   serverAddress: "frostmine.xyz",
-  discordInvite: "https://discord.gg/YOUR_INVITE",
-  voteLinks: [
-    { name: "Vote site", url: "https://YOUR-VOTE-LINK" }
-  ]
+  discordInvite: "https://discord.gg/frostmine"
 };
 ```
 
-Add your real Discord invite and vote URLs. The website currently shows a friendly placeholder until these are configured.
+The FrostMine Discord invite is already configured as `https://discord.gg/frostmine`.
 
 Review the starter rules in `index.html` and replace them with FrostMine's official rules before publishing.
 
