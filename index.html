@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="FrostMine — a Minecraft Lifesteal experience. Join the server at frostmine.xyz.">
+  <title>FrostMine — frostmine.xyz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FrostMine home">
+      <span class="brand-mark">✦</span>
+      <span>FROST<span class="brand-blue">MINE</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#rules">Rules</a>
+      <a class="nav-link" href="#vote">Vote</a>
+      <a class="nav-link" href="#status">Status</a>
+      <a class="nav-discord" href="#community">Discord <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> THE FROSTMine EXPERIENCE</div>
+        <h1>MAKE YOUR<br> <span class="gradient-text">OWN LEGACY.</span></h1>
+        <p class="hero-description">Fight your way to the top. Build your reputation. Survive the cold. Your next adventure starts here.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="copyIp"> <span>▣</span> <span id="copyLabel">Copy Server IP</span></button>
+          <a class="button button-secondary" href="#status">Explore server <span>↘</span></a>
+        </div>
+        <div class="server-address"><span class="address-dot"></span><span>JAVA &amp; BEDROCK</span><i></i><strong>frostmine.xyz</strong></div>
+      </div>
+      <div class="hero-art" aria-label="FrostMine icy Minecraft-inspired artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="ice-shard shard-back"></div>
+        <div class="ice-cube"><div class="cube-top"></div><div class="cube-front"></div><div class="cube-side"></div><div class="cube-glint"></div></div>
+        <div class="art-spark spark-a">✦</div><div class="art-spark spark-b">✧</div><div class="art-spark spark-c">✦</div>
+        <div class="art-caption"><span>01 / SURVIVE</span><span>BUILT FOR THE BOLD</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>EST. FROSTMINE</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="section-kicker">WELCOME TO FROSTMINE</div>
+      <div class="intro-grid">
+        <h2>A WORLD THAT<br><span class="muted-heading">REWARDS</span> THE<br>FEARLESS.</h2>
+        <div class="intro-text"><p>FrostMine is a place to compete, team up and make your mark. Gear up, take on the challenge and create a story worth remembering.</p><a href="#community" class="text-link">MEET THE COMMUNITY <span>↗</span></a></div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-number">01</span><div class="feature-icon">⚔</div><h3>FIGHT</h3><p>Take on other players and prove what you're made of.</p></article>
+        <article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">❄</div><h3>THRIVE</h3><p>Build your path, make allies and rise through the server.</p></article>
+        <article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">◇</div><h3>MAKE YOUR MARK</h3><p>Every encounter is another chance to create your legacy.</p></article>
+      </div>
+    </section>
+
+    <section class="rules-section section-wrap" id="rules">
+      <div class="section-heading"><div><div class="section-kicker">PLAY FAIR. PLAY HARD.</div><h2>SERVER <span class="gradient-text">RULES.</span></h2></div><p>Keep FrostMine competitive, welcoming and fun for everyone.</p></div>
+      <div class="rules-list">
+        <article class="rule"><span>01</span><div><h3>Respect everyone</h3><p>No harassment, hate speech, threats or targeted toxicity.</p></div><b>+</b></article>
+        <article class="rule"><span>02</span><div><h3>No cheating</h3><p>Hacked clients, unfair modifications, macros and exploit abuse are not allowed.</p></div><b>+</b></article>
+        <article class="rule"><span>03</span><div><h3>No exploiting</h3><p>Do not abuse bugs or glitches. Report issues to the staff team.</p></div><b>+</b></article>
+        <article class="rule"><span>04</span><div><h3>Keep chat appropriate</h3><p>No spam, excessive advertising or inappropriate content.</p></div><b>+</b></article>
+        <article class="rule"><span>05</span><div><h3>Listen to staff</h3><p>Follow staff instructions and use the proper channels for appeals or reports.</p></div><b>+</b></article>
+      </div>
+      <p class="rules-note">These are starter rules. Make sure to read any in-game rules and staff announcements too.</p>
+    </section>
+
+    <section class="vote-section section-wrap" id="vote">
+      <div class="vote-panel"><div class="vote-glow"></div><div class="vote-content"><div class="section-kicker">SUPPORT THE SERVER</div><h2>HELP FROSTMINE<br><span class="gradient-text">GROW.</span></h2><p>Voting helps new players discover FrostMine. Vote for the server and support the community.</p><a class="button button-primary" href="#community">Find vote links <span>↗</span></a></div><div class="vote-emblem">✦</div></div>
+      <p class="vote-note">Vote links will be added here when they are available.</p>
+    </section>
+
+    <section class="status-section section-wrap" id="status">
+      <div class="section-heading"><div><div class="section-kicker">CHECK BEFORE YOU CONNECT</div><h2>SERVER <span class="gradient-text">STATUS.</span></h2></div><p>See whether FrostMine is online and ready for you.</p></div>
+      <div class="status-card"><div class="status-main"><div class="status-indicator" id="statusIndicator"></div><div><span class="status-label">JAVA SERVER</span><h3 id="serverStatus">Checking status...</h3><p id="statusMessage">Connecting to server status service</p></div></div><div class="player-count"><strong id="playerCount">—</strong><span>PLAYERS ONLINE</span></div><button class="refresh-button" id="refreshStatus" aria-label="Refresh server status">↻</button></div>
+      <div class="status-address"><span>SERVER ADDRESS</span><strong>frostmine.xyz</strong><button id="copyIpSmall">COPY IP</button></div>
+    </section>
+
+    <section class="community-section section-wrap" id="community"><div class="community-box"><div class="community-mark">✦</div><div class="section-kicker">YOUR PEOPLE ARE HERE</div><h2>FIND YOUR <span class="gradient-text">CREW.</span></h2><p>Join the FrostMine Discord for updates, announcements and community chat.</p><a class="button button-primary" id="discordLink" href="https://discord.com" target="_blank" rel="noopener">Join our Discord <span>↗</span></a><small>Discord invite link can be configured in script.js.</small></div></section>
+  </main>
+
+  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">✦</span><span>FROST<span class="brand-blue">MINE</span></span></a><span>© <span id="year"></span> FROSTMINE. ALL RIGHTS RESERVED.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
